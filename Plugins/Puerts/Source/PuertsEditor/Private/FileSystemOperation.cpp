@@ -88,6 +88,10 @@ TArray<FString> UFileSystemOperation::GetFiles(FString Path)
 void UFileSystemOperation::PuertsNotifyChange(FString Path, FString Source)
 {
     IPuertsModule::Get().ReloadModule(*Path, Source);
+    if (IPuertsModule::Get().OnModuleChange.IsBound())
+    {
+        IPuertsModule::Get().OnModuleChange.Broadcast(*Path);
+    }
 }
 
 FString UFileSystemOperation::FileMD5Hash(FString Path)

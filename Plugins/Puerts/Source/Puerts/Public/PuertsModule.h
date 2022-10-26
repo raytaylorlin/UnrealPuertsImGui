@@ -52,5 +52,8 @@ public:
 
 #if WITH_EDITOR
     virtual bool IsInPIE() = 0;
+
+    DECLARE_MULTICAST_DELEGATE_OneParam(FOnModuleChange, FName);
+    FOnModuleChange OnModuleChange;
 #endif
 };
