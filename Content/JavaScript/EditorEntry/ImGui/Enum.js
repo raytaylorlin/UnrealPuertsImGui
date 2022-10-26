@@ -1,0 +1,35 @@
+"use strict";
+// Copy from [SECTION] Flags & Enumerations in imgui.h (v1.85)
+Object.defineProperty(exports, "__esModule", { value: true });
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+//# sourceMappingURL=Enum.js.map
